@@ -16,7 +16,7 @@
      register: srikar
      ignore_errors: true
 
-   - name: create the user
+   - name: create user roboshop
      ansible.builtin.user:
       name: roboshop
      when: srikar.rc != 0 
