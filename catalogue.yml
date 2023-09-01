@@ -36,11 +36,11 @@
       state: directory 
      when: srikar.stat.exists == False
 
-   - name: download the zip
+   - name: download zip
      ansible.builtin.get_url:
      url: https://roboshop-builds.s3.amazonaws.com/catalogue.zip
      dest: /tmp
-     
+
      
 
 
