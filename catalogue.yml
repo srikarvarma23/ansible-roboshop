@@ -20,6 +20,16 @@
      ansible.builtin.user:
       name: roboshop
      when: srikar.rc != 0 
+
+   - name: check directory app exist or not
+     ansible.builtin.stat:
+      path: /app
+     register: directory 
+
+   - name: print the directory 
+     ansible.builtin.debug:
+      msg: "output is: {{directory}}"
+
      
 
 
