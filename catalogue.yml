@@ -1,0 +1,7 @@
+- name: catalogue component
+  hosts: catalogue
+  become: yes
+
+  tasks: 
+   - name: rpm setup
+     ansible.builtin.shell: "curl -sL https://rpm.nodesource.com/setup_lts.x | bash"
