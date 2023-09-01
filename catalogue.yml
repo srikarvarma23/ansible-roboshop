@@ -74,7 +74,7 @@
    - name: load schema 
      ansible.builtin.command: mongo --host mongodb.join-devops.online < /app/schema/catalogue.js
 
-   - name: enable and restart the service
+   - name: restart catalogue
      ansible.builtin.service:
       name: catalogue
       start: restarted
