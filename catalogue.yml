@@ -5,3 +5,21 @@
   tasks: 
    - name: rpm setup
      ansible.builtin.shell: "curl -sL https://rpm.nodesource.com/setup_lts.x | bash"
+
+   - name: install nodejs
+     ansible.builtin.yum:
+      name: nodejs
+      state: installed
+
+   - name: check user roboshop exist or not
+     ansible.builtin.command: id roboshop
+      register: srikar
+      ignore_errors: true
+
+   - name: create the user
+     ansible.builtin.user:
+      name: roboshop
+     when: srikar.rc != 0 
+     
+
+
