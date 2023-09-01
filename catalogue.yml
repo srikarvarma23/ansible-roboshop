@@ -13,8 +13,8 @@
 
    - name: check user roboshop exist or not
      ansible.builtin.command: id roboshop
-      register: srikar
-      ignore_errors: true
+     register: srikar
+     ignore_errors: true
 
    - name: create the user
      ansible.builtin.user:
