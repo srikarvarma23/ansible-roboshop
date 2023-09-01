@@ -33,7 +33,7 @@
    - name: create the directory
      ansible.builtin.file:
       path: /app
-      state: srikar
+      state: directory 
      when: srikar.stat.exists == false
 
      
