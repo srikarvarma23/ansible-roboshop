@@ -1,0 +1,8 @@
+[mongodb]
+mongodb.join-devops.online
+
+[catalogue]
+catalogue.join-devops.online
+
+[web]
+web.join-devops.online
