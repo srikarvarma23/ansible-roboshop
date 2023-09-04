@@ -55,7 +55,7 @@
   - name: enable and start the service
     ansible.builtin.service:
      name: user
-     state: installed
+     state: started 
      enabled: yes
 
   - name: copy mongo.repo
