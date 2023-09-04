@@ -74,10 +74,10 @@
    - name: load catalogue data
      ansible.builtin.shell: mongo --host mongodb.join-devops.online < /app/schema/catalogue.js
 
-   - name: restart catalogue
+   - name: start catalogue
      ansible.builtin.service:
       name: catalogue
-      start: restarted
+      start: started
       enabled: true
       
 
