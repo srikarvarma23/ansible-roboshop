@@ -15,7 +15,7 @@
     ansible.builtin.command: id roboshop
     register: srikar
     ignore_errors: true
-
+    
   - name: create the user
     ansible.builtin.user: 
      name: roboshop
