@@ -24,3 +24,6 @@ shipping.join-devops.online
 
 [rabbitmq]
 rabbitmq.join-devops.online
+
+[payment]
+payment.join-devops.online
