@@ -21,3 +21,6 @@ mysql.join-devops.online
 
 [shipping]
 shipping.join-devops.online
+
+[rabbitmq]
+rabbitmq.join-devops.online
