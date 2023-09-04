@@ -15,7 +15,7 @@
     ansible.builtin.command: id roboshop
     register: srikar
     ignore_errors: true
-    
+
   - name: create the user
     ansible.builtin.user: 
      name: roboshop
@@ -24,7 +24,7 @@
   - name: check app directory exist or not
     ansible.builtin.stat:
      path: /app
-     register: srikar
+    register: srikar
     
   - name: create app directory 
     ansible.builtin.file:
